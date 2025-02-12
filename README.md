@@ -6,12 +6,18 @@
 
 I'm so happy you're joining me on this path. We'll be building immensely satisfying projects in the coming weeks. Some will be easy, some will be challenging, many will ASTOUND you! The projects build on each other so you develop deeper and deeper expertise each week. One thing's for sure: you're going to have a lot of fun along the way.
 
+### Start
+
+`source venv/bin/activate`
+`pip show jupyterlab` # Sprawdź, czy Jupyter jest poprawnie zainstalowany
+`pip install jupyterlab` 
+
 ### A note before you begin
 
-I'm here to help you be most successful with your learning! If you hit any snafus, or if you have any ideas on how I can improve the course, please do reach out in the platform or by emailing me direct (ed@edwarddonner.com). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:  
+I'm here to help you be most successful with your learning! If you hit any snafus, or if you have any ideas on how I can improve the course, please do reach out in the platform or by emailing me direct (ed@edwarddonner.com). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:
 https://www.linkedin.com/in/eddonner/
 
-Resources to accompany the course, including the slides and useful links, are here:  
+Resources to accompany the course, including the slides and useful links, are here:
 https://edwarddonner.com/2024/11/13/llm-engineering-resources/
 
 ## Instant Gratification instructions for Week 1, Day 1
@@ -19,20 +25,20 @@ https://edwarddonner.com/2024/11/13/llm-engineering-resources/
 We will start the course by installing Ollama so you can see results immediately!
 1. Download and install Ollama from https://ollama.com noting that on a PC you might need to have administrator permissions for the install to work properly
 2. On a PC, start a Command prompt / Powershell (Press Win + R, type `cmd`, and press Enter). On a Mac, start a Terminal (Applications > Utilities > Terminal).
-3. Run `ollama run llama3.2` or for smaller machines try `ollama run llama3.2:1b` - **please note** steer clear of Meta's latest model llama3.3 because at 70B parameters that's way too large for most home computers!  
-4. If this doesn't work: you may need to run `ollama serve` in another Powershell (Windows) or Terminal (Mac), and try step 3 again. On a PC, you may need to be running in an Admin instance of Powershell.  
+3. Run `ollama run llama3.2` or for smaller machines try `ollama run llama3.2:1b` - **please note** steer clear of Meta's latest model llama3.3 because at 70B parameters that's way too large for most home computers!
+4. If this doesn't work: you may need to run `ollama serve` in another Powershell (Windows) or Terminal (Mac), and try step 3 again. On a PC, you may need to be running in an Admin instance of Powershell.
 5. And if that doesn't work on your box, I've set up this on the cloud. This is on Google Colab, which will need you to have a Google account to sign in, but is free:  https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
 
 Any problems, please contact me!
 
 ## Then, Setup instructions
 
-After we do the Ollama quick project, and after I introduce myself and the course, we get to work with the full environment setup.  
+After we do the Ollama quick project, and after I introduce myself and the course, we get to work with the full environment setup.
 
 Hopefully I've done a decent job of making these guides bulletproof - but please contact me right away if you hit roadblocks:
 
 - PC people please follow the instructions in [SETUP-PC.md](SETUP-PC.md)
-- Mac people please follow the instructions in [SETUP-mac.md](SETUP-mac.md)  
+- Mac people please follow the instructions in [SETUP-mac.md](SETUP-mac.md)
 - Linux people please follow the instructions in [SETUP-linux.md](SETUP-linux.md)
 
 The are also PDF versions of the setup instructions in this folder if you'd prefer.
@@ -45,10 +51,10 @@ Please do monitor your API usage to ensure you're comfortable with spend; I've i
 
 ### Free alternative to Paid APIs
 
-Early in the course, I show you an alternative if you'd rather not spend anything on APIs:  
-Any time that we have code like:  
-`openai = OpenAI()`  
-You can use this as a direct replacement:  
+Early in the course, I show you an alternative if you'd rather not spend anything on APIs:
+Any time that we have code like:
+`openai = OpenAI()`
+You can use this as a direct replacement:
 `openai = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')`
 
 Below is a full example:
@@ -71,7 +77,7 @@ print(response.choices[0].message.content)
 
 ### How this Repo is organized
 
-There are folders for each of the "weeks", representing modules of the class, culminating in a powerful autonomous Agentic AI solution in Week 8 that draws on many of the prior weeks.    
+There are folders for each of the "weeks", representing modules of the class, culminating in a powerful autonomous Agentic AI solution in Week 8 that draws on many of the prior weeks.
 Follow the setup instructions above, then open the Week 1 folder and prepare for joy.
 
 ### The most important part
@@ -84,7 +90,7 @@ You should be able to use the free tier or minimal spend to complete all the pro
 
 Learn about Google Colab and set up a Google account (if you don't already have one) [here](https://colab.research.google.com/)
 
-The colab links are in the Week folders and also here:  
+The colab links are in the Week folders and also here:
 - For week 3 day 1, this Google Colab shows what [colab can do](https://colab.research.google.com/drive/1DjcrYDZldAXKJ08x1uYIVCtItoLPk1Wr?usp=sharing)
 - For week 3 day 2, here is a colab for the HuggingFace [pipelines API](https://colab.research.google.com/drive/1aMaEw8A56xs0bRM4lu8z7ou18jqyybGm?usp=sharing)
 - For week 3 day 3, here's the colab on [Tokenizers](https://colab.research.google.com/drive/1WD6Y2N7ctQi1X9wa6rpkg8UfyA4iSVuz?usp=sharing)

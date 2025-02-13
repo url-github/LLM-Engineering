@@ -9,8 +9,14 @@ I'm so happy you're joining me on this path. We'll be building immensely satisfy
 ### Start
 
 `source venv/bin/activate`
+
+`pip install jupyterlab`
+
 `pip show jupyterlab` # Sprawdź, czy Jupyter jest poprawnie zainstalowany
-`pip install jupyterlab` 
+
+`python -m jupyterlab` # Opcja1
+
+`jupyter lab` # Opcja2
 
 ### A note before you begin
 

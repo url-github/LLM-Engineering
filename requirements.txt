@@ -1,10 +1,10 @@
 python-dotenv
 jupyterlab # Jupyter
 ipywidgets
-requests
+requests # Requests
 numpy
 pandas
-scipy
+scipy # SciPy
 scikit-learn
 matplotlib
 gensim

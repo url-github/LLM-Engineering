@@ -1,5 +1,5 @@
 python-dotenv
-jupyterlab
+jupyterlab # Jupyter
 ipywidgets
 requests
 numpy
@@ -9,9 +9,9 @@ scikit-learn
 matplotlib
 gensim
 torch
-transformers
+transformers # Huggingface
 tqdm
-openai
+openai # OpenAI API
 gradio
 langchain
 tiktoken
@@ -25,7 +25,6 @@ sentencepiece
 matplotlib
 google-generativeai
 anthropic
-scikit-learn
 unstructured
 chromadb
 plotly
@@ -33,7 +32,7 @@ jupyter-dash
 beautifulsoup4
 pydub
 modal
-ollama
+ollama # Ollama API
 accelerate
 sentencepiece
 bitsandbytes

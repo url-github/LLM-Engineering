@@ -1,5 +1,5 @@
 python-dotenv
-jupyterlab # Jupyter
+jupyterlab # Jupyter: jupyter lab # Uruchomienie Jupyter
 ipywidgets
 requests # Requests
 numpy
